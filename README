@@ -20,5 +20,9 @@ run:
 
 5 ./app
 
+Useful Go libraries:
+Golang PostgreSQL driver https://github.com/go-pg/pg 
+Request router https://github.com/gorilla/mux
+
 ps. I have no experience of go or postgresql, so I just implement the basic requirement.
 no exception handle, no sql injection dected.
