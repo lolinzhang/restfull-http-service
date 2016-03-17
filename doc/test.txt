@@ -1,0 +1,18 @@
+
+//add users
+curl -XPOST -d '{"name":"Alice"}' "http://localhost:8000/users"
+curl -XPOST -d '{"name":"Lolin"}' "http://localhost:8000/users"
+curl -XPOST -d '{"name":"bob"}' "http://localhost:8000/users"
+
+//list users, limit 10
+curl -XGET "http://localhost:8000/users"
+
+//add relationship
+curl -XPUT -d '{"state":"liked"}' "http://localhost:8000/users/1/relationships/2"
+curl -XPUT -d '{"state":"disliked"}' "http://localhost:8000/users/1/relationships/2"
+curl -XPUT -d '{"state":"disliked"}' "http://localhost:8000/users/2/relationships/1"
+curl -XPUT -d '{"state":”liked"}' "http://localhost:8000/users/2/relationships/1"
+curl -XPUT -d '{"state":"disliked"}' "http://localhost:8000/users/1/relationships/3"
+
+//list relationhips
+curl -XGET "http://localhost:8000/users/1/relationships"

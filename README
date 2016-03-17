@@ -1,0 +1,24 @@
+The database file in doc/db.sql
+
+The test command in doc/test.txt
+
+run:
+1 Import the sql to postgresql
+
+2 Go to the bin folder.
+
+3 Run list commond:
+	go get github.com/gorilla/mux
+	go get github.com/golang/glog
+	go get github.com/jinzhu/inflection
+	go get gopkg.in/bufio.v1
+	go get gopkg.in/bsm/ratelimit.v1
+	go get gopkg.in/pg.v4
+	go get github.com/bitly/go-simplejson
+
+4 go build app
+
+5 ./app
+
+ps. I have no experience of go or postgresql, so I just implement the basic requirement.
+no exception handle, no sql injection dected.
